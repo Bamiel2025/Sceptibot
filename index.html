@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SceptiBot - Entraînement à l'esprit critique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SceptiBot</h1>
+        <p class="tagline">Teste tes arguments face au climatoscepticisme</p>
+    </header>
+
+    <section class="instructions">
+        <h2>⚠️ Important : Instructions pour l'Utilisateur</h2>
+        <ul>
+            <li><strong>SceptiBot est un outil éducatif.</strong> Il utilise des arguments de mauvaise foi, des données erronées et des théories obsolètes pour illustrer les mécanismes de la désinformation climatique.</li>
+            <li><strong>Ne prenez JAMAIS les réponses de SceptiBot au sérieux.</strong> Elles sont conçues pour être trompeuses et illogiques, afin de simuler un discours climatosceptique.</li>
+            <li><strong>Ton défi :</strong> Utilise tes connaissances scientifiques pour trouver les failles dans ses arguments et formuler une contre-réponse basée sur des faits. Si tu es bloqué(e), utilise le bouton "Afficher un indice 🤔".</li>
+            <li><strong>Encourage tes camarades et toi-même à vérifier les faits</strong> et à vous méfier des informations non fondées. Cherche toujours des sources fiables (GIEC, agences scientifiques reconnues, publications revues par les pairs).</li>
+        </ul>
+    </section>
+
+    <main class="chat-container">
+        <div id="chatbox">
+            <div class="message bot-message">
+                <p>Bonjour ! Pose-moi une question sur le climat si tu doutes de ce qu'on te raconte...</p>
+                <!-- Pas de bouton indice pour le message d'accueil initial -->
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Pose ta question ici..." aria-label="Zone de saisie de question">
+            <button id="sendButton">Envoyer</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Un outil pédagogique pour exercer son esprit critique.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #d9534f; /* Rouge sceptique */
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.tagline {
+    margin: 5px 0 0;
+    font-style: italic;
+}
+
+.instructions {
+    background-color: #fff3cd; /* Jaune avertissement */
+    border: 1px solid #ffeeba;
+    color: #856404;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.instructions h2 {
+    margin-top: 0;
+    color: #d9534f; /* Rappel couleur sceptique */
+}
+
+.instructions ul {
+    padding-left: 20px;
+}
+
+.instructions li {
+    margin-bottom: 10px;
+}
+
+.chat-container {
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Contient les éléments flottants si besoin */
+}
+
+#chatbox {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 60vh; /* Augmenté un peu pour l'indice */
+    border-bottom: 1px solid #ddd;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border-radius: 18px;
+    max-width: 80%;
+    line-height: 1.4;
+}
+
+.user-message {
+    background-color: #d1ecf1; /* Bleu utilisateur */
+    color: #0c5460;
+    margin-left: auto; /* Aligne à droite */
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #f8d7da; /* Rouge clair sceptique */
+    color: #721c24;
+    margin-right: auto; /* Aligne à gauche */
+    text-align: left;
+}
+
+.message p {
+    margin: 0;
+}
+
+.input-area {
+    display: flex;
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+#userInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+#sendButton {
+    padding: 10px 20px;
+    background-color: #5cb85c; /* Vert pour envoyer */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#sendButton:hover {
+    background-color: #4cae4c;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Style pour le bouton d'indice */
+.hint-button {
+    display: inline-block; /* Pour qu'il se mette sous le texte */
+    margin-top: 8px;      /* Espace au-dessus du bouton */
+    padding: 5px 10px;
+    font-size: 0.85em;
+    background-color: #6c757d; /* Gris neutre */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.hint-button:hover {
+    background-color: #5a6268;
+}
+
+/* Style pour le texte de l'indice (initialement caché) */
+.hint-text {
+    display: none; /* Caché par défaut - géré par JS */
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #e9ecef; /* Fond gris clair */
+    color: #495057;          /* Texte un peu plus sombre */
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: 1px solid #ced4da; /* Bordure légère */
+    line-height: 1.3;
+}
